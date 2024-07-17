@@ -1,113 +1,149 @@
 import Image from "next/image";
+import Link from "next/link";
+import Navigation from "./components/nav";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-white">
+      <Navigation/>
+      <section className="bg-hero-blue">
+        <div className="grid max-w-screen-xl px-5 md:px-2 py-8 mx-auto lg:gap-8 xl:gap-5 lg:py-16 lg:grid-cols-12">
+          <div className="lg:col-span-6 flex flex-col justify-center items-center lg:items-start mb-5 lg:my-0">
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold md:text-5xl xl:text-6xl">Apply Today!</h1>
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">With a great location next to Kyungdong University Global Campus, Padosori is the Best Housing Around in Bongopo-Ri</p>
+            <div className="text-center lg:text-left">
+              <Link href="#" className="inline-flex items-center justify-center px-5 text-xl py-3 mr-3 font-medium text-center text-black hover:text-white border border-gray-200 rounded-lg focus:ring-4 focus:ring-gray-100 bg-white hover:bg-accent-text focus:ring-primary-300">
+                Apply
+                <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+          <div className="lg:col-span-6">
+            <div className="flex justify-center lg:justify-end">
+              <Image
+                src="/hero-img.svg"
+                width={500}
+                height={500}
+                alt="KyungDong University with ocean on the background"
+                layout="intrinsic"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>            
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section className="bg-white my-2">
+        <div className="max-w-screen-xl mx-auto px-5 md:px-2 py-8 lg:py-16 lg:grid lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-6">
+            <div className="flex justify-center lg:justify-start mb-5 lg:mb-0">
+              <Image
+                src="/welcome-img.svg"
+                width={500}
+                height={500}
+                alt="Padosori housing at night with lights turned on"
+                layout="intrinsic"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+          <div className="lg:col-span-6 flex flex-col justify-center items-center lg:items-start">
+            <h2 className="max-w-2xl mb-4 text-3xl font-extrabold md:text-4xl xl:text-5xl text-center lg:text-left"> Welcome to Padosori Pension</h2>
+            <p className="max-w-2xl mb-6 text-base font-light text-gray-500 md:text-lg text-center lg:text-left">Discover the perfect blend of convenience and comfort at our Padosori Housing in Bongpo-Ri, just a short 5-minute walk from Kyungdong University Global Campus. Ideal for students and professionals alike, our housing offers a tranquil environment with easy access to campus facilities and nearby amenities.</p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-hero-blue">
+        <div className="grid max-w-screen-xl px-5 md:px-2 py-8 mx-auto lg:gap-8 xl:gap-12 lg:py-16 lg:grid-cols-12">
+          <div className="lg:col-span-6 flex flex-col justify-center items-center lg:items-start mb-5 lg:my-0">
+            <h2 className="max-w-2xl mb-4 text-2xl font-extrabold md:text-3xl xl:text-4xl text-center lg:text-left">Learn More Information </h2>
+            <p className="max-w-2xl mb-6 text-base font-light text-gray-500 md:text-lg text-center lg:text-left">Whether you're a student looking for proximity to campus or a professional seeking a quiet retreat, Padosori Housing provides the perfect blend of convenience and comfort. Learn more information on the experience of Padosori living firsthand.</p>
+            <div className="text-center lg:text-left">
+              <Link href="/FAQ" className="inline-flex items-center justify-center px-5 text-xl py-3 mr-3 font-medium text-center text-black hover:text-white border border-gray-200 rounded-lg focus:ring-4 focus:ring-gray-100 bg-white hover:bg-accent-text focus:ring-primary-300">
+                Learn More
+                <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+          <div className="lg:col-span-6">
+            <div>
+              <div className="flex w-[80%] lg:w-[100%] mx-auto lg:ml-0 lg:justify-center items-center gap-5 py-2 my-2">
+                <Image
+                  src="/icon-house.svg"
+                  width={70}
+                  height={50}
+                  alt="Icon of money on a house"
+                />
+                <p>Affordable housing options cater to budget-conscious individuals and families.</p>
+              </div>
+              <div className="flex w-[80%] lg:w-[100%] mx-auto lg:ml-0 lg:justify-center items-center gap-5 py-2 my-2">
+                <Image
+                  src="/icon-money.svg"
+                  width={65}
+                  height={50}
+                  alt="Icon of money being put in"
+                />
+                <p>Reasonable deposits make moving in hassle-free and accessible to all. </p>
+              </div>
+              <div className="flex w-[80%] lg:w-[100%] mx-auto lg:ml-0 lg:justify-center items-center gap-5 py-2 my-2">
+                <Image
+                  src="/icon-pet.svg"
+                  width={70}
+                  height={50}
+                  alt="Icon of No Pet Sign"
+                />
+                <p>No pets policy ensures a clean and allergen-free environment for all residents. </p>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </section>
+      <section>
+        <div className="max-w-screen-xl px-5 md:px-2 py-8 mx-auto">
+          <div className="lg:col-span-12 flex flex-col justify-center items-center">
+            <h2 className="max-w-2xl my-10 text-2xl font-extrabold md:text-3xl xl:text-4xl text-center lg:text-left">Why Padosori Housing?</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-10">
+            <div className="px-10 py-12 lg:justify-center items-center border border-gray-200 rounded-lg">
+              <Image
+                    src="/icon-location.svg"
+                    width={80}
+                    height={50}
+                    alt="Icon Showing location with a Pin"
+                    className="m-auto"
+                  />
+              <h3 className="text-center text-xl font-bold my-2">Prime Location</h3>
+              <p className="text-center">Enjoy the convenience of living just minutes away from campus, surrounded by local shops, dining options, and recreational facilities.</p>
+            </div>
+            <div className="px-10 py-12 lg:justify-center items-center border border-gray-200 rounded-lg">
+              <Image
+                    src="/icon-space.svg"
+                    width={80}
+                    height={50}
+                    alt="Icon showing a nice small house"
+                    className="m-auto"
+                  />
+              <h3 className="text-center text-xl font-bold my-2">Comfortable Living Spaces</h3>
+              <p className="text-center">Each unit is designed for your comfort, featuring private bathrooms, spacious living areas, and access to shared amenities like laundry facilities.</p>
+            </div>
+            <div className="px-10 py-12 lg:justify-center items-center border border-gray-200 rounded-lg">
+              <Image
+                    src="/icon-community.svg"
+                    width={80}
+                    height={50}
+                    alt="Icon showing a group of people"
+                    className="m-auto"
+                  />
+              <h3 className="text-center text-xl font-bold my-2">Community Atmosphere</h3>
+              <p className="text-center">Join a vibrant community of students and professionals who value peace and productivity. Connect with peers in our common areas or take advantage of quiet study spaces.</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
     </main>
-  );
+  )
 }
