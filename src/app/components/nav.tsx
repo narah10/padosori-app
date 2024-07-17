@@ -3,7 +3,6 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -57,7 +56,7 @@ function Navigation() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            <Link href="/api/auth/login" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                                 Residents
                             </Link>
                         </li>
@@ -66,6 +65,7 @@ function Navigation() {
                                 Apply
                             </Link>
                         </li>
+                        {/* <a href="/api/auth/login">Login</a> */}
                     </ul>
                 </div>
             </div>
