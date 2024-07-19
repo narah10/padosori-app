@@ -2,6 +2,7 @@ import Navigation from "../components/nav";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "../components/head";
+import Footer from "../components/footer";
 
 export default function FAQ() {
     return (
@@ -132,6 +133,7 @@ export default function FAQ() {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </main>
     )
   }

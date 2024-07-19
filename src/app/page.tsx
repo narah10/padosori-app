@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./components/nav";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -102,7 +103,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="max-w-screen-xl px-5 md:px-2 py-8 mx-auto">
+        <div className="max-w-screen-xl px-5 md:px-2 py-10 mx-auto">
           <div className="lg:col-span-12 flex flex-col justify-center items-center">
             <h2 className="max-w-2xl my-10 text-2xl font-extrabold md:text-3xl xl:text-4xl text-center lg:text-left">Why Padosori Housing?</h2>
           </div>
@@ -144,6 +145,7 @@ export default function Home() {
           
         </div>
       </section>
+      <Footer/>
     </main>
   )
 }
