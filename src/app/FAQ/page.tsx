@@ -8,7 +8,12 @@ export default function FAQ() {
     return (
         <main className="bg-white">
             <Navigation/>
-            <Head/>
+            <Head
+                imageSrc="/kdu.jpg"
+                h1="Have questions?"
+                text="Welcome to our FAQ page! Here, you'll find answers to the most common questions about Padosori Housing. Whether you're curious about our application process, housing options, amenities, or policies, we've got you covered. If you don't find the answer you're looking for, feel free to reach out to our team for more information."
+                alt="Kyungdong Global Campus next to the ocean"
+            />
             <section className="bg-white">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                     <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 ">Frequently Asked Questions</h2>

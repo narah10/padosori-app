@@ -6,16 +6,25 @@ export default function Apply(){
     return(
         <main>
             <Navigation/>
-            <Head/>
-            <section>
-                <h2 className="text-center font-bold">Application Form</h2>
+            <Head
+                  imageSrc="/kdu-logo.gif"
+                  h1="Apply Today!"
+                  text="With a great location next to Kyungdong University Global Campus, Padosori is the Best Housing Around! "
+                  alt="Kyungdong Global Campus Logo Banner"
+                  />
+            <section className="my-5">
+                <h2 className="text-center font-extrabold text-3xl">Application Form</h2>
                 <form className="max-w-lg mx-auto">
                 <div className="mb-5">
-                    <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 ">First Name</label>
+                    <label htmlFor="fname" className="block mb-2 text-sm font-medium text-gray-900">
+                        First Name
+                    </label>
                     <input type="text" id="fname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John" required />
                 </div>
                 <div className="mb-5">
-                    <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900 ">Last Name</label>
+                    <label htmlFor="lname" className="block mb-2 text-sm font-medium text-gray-900">
+                        Last Name
+                    </label>
                     <input type="text" id="lname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Doe" required />
                 </div>
                 <div className="mb-5">
@@ -48,7 +57,7 @@ export default function Apply(){
                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Your message</label>
                 <textarea id="message" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..."></textarea>
                 </div>
-                <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit Application</button>
+                <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center "><a href="/Success">Submit Application</a></button>
                 </form>
 
             </section>
