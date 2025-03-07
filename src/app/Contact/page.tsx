@@ -43,7 +43,7 @@ export default function Contact() {
                                 className="font-heading mb-4 font-bold tracking-tight text-gray-900 text-3xl sm:text-5xl">
                                 Get in Touch
                             </h1>
-                            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600">We'd love to answer your questions!
+                            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600">We&apos;d love to answer your questions!
                             </p>
                         </div>
                     </div>

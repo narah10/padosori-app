@@ -38,7 +38,7 @@ export default function Home() {
         <div className="grid max-w-screen-xl px-5 md:px-2 py-8 mx-auto lg:gap-8 xl:gap-12 lg:py-16 lg:grid-cols-12">
           <div className="lg:col-span-6 flex flex-col justify-center items-center lg:items-start mb-5 lg:my-0">
             <h2 className="max-w-2xl mb-4 text-2xl font-extrabold md:text-3xl xl:text-4xl text-center lg:text-left">Learn More Information </h2>
-            <p className="max-w-2xl mb-6 text-base font-light text-gray-500 md:text-lg text-center lg:text-left">Whether you're a student looking for proximity to campus or a professional seeking a quiet retreat, Padosori Housing provides the perfect blend of convenience and comfort. Learn more information on the experience of Padosori living firsthand.</p>
+            <p className="max-w-2xl mb-6 text-base font-light text-gray-500 md:text-lg text-center lg:text-left">Whether you&apos;re a student looking for proximity to campus or a professional seeking a quiet retreat, Padosori Housing provides the perfect blend of convenience and comfort. Learn more information on the experience of Padosori living firsthand.</p>
             <div className="text-center lg:text-left">
               <Link href="/FAQ" className="inline-flex items-center justify-center px-5 text-xl py-3 mr-3 font-medium text-center text-black hover:text-white border border-gray-200 rounded-lg focus:ring-4 focus:ring-gray-100 bg-white hover:bg-accent-text focus:ring-primary-300">
                 Learn More

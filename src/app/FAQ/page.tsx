@@ -11,7 +11,7 @@ export default function FAQ() {
             <Head
                 imageSrc="/kdu.jpg"
                 h1="Have questions?"
-                text="Welcome to our FAQ page! Here, you'll find answers to the most common questions about Padosori Housing. Whether you're curious about our application process, housing options, amenities, or policies, we've got you covered. If you don't find the answer you're looking for, feel free to reach out to our team for more information."
+                text="Welcome to our FAQ page! Here, you&apos;ll find answers to the most common questions about Padosori Housing. Whether you&apos;re curious about our application process, housing options, amenities, or policies, we&apos;ve got you covered. If you don&apos;t find the answer you&apos;re looking for, feel free to reach out to our team for more information."
                 alt="Kyungdong Global Campus next to the ocean"
             />
             <section className="bg-white">
@@ -39,7 +39,7 @@ export default function FAQ() {
                                     How close is the housing to the Campus?
                                 </h3>
                                 <p className="text-gray-500 ">Our housing is conveniently located just a 5-minute walk from Kyungdong University Global Campus, making it ideal for students and faculty.</p>
-                                <p className="text-gray-500 ">Feel free to <a href="#" className="font-medium underline text-primary-600 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
+                                <p className="text-gray-500 ">Feel free to <a href="#" className="font-medium underline text-primary-600 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we&apos;ll help you out as soon as we can.</p>
                             </div>
                             <div className="mb-10">
                                 <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 ">
